@@ -1,0 +1,119 @@
+@startuml
+left to right direction
+skinparam nodesep 150
+skinparam ranksep 150
+skinparam classAttributeIconSize 0
+skinparam ClassMemberIconDisplay true
+class Circle  {
+    -- Fields --
+    - _r
+    -- Properties --
+    + R
+    -- Methods --
+    + Circle()
+    + GetArea()
+    + GetPerimiter()
+    - validateR()
+}
+abstract class GeometricFigure  {
+    ' -- Fields --
+    -- Properties --
+    + Name
+    -- Methods --
+    ' # GeometricFigure()
+    + {abstract} GetArea()
+    + {abstract} GetPerimiter()
+    + ToString()
+}
+class Kite  {
+    -- Fields --
+    - _b
+    -- Properties --
+    + B
+    -- Methods --
+    + Kite()
+    + GetArea()
+    + GetPerimiter()
+    - validateB()
+}
+class Parallelogram  {
+    -- Fields --
+    - _h
+    -- Properties --
+    + H
+    -- Methods --
+    + Parallelogram()
+    + GetArea()
+    + GetPerimiter()
+    - validateH()
+}
+class Rectangle  {
+    -- Fields --
+    - _b
+    -- Properties --
+    + B
+    -- Methods --
+    + Rectangle()
+    + GetArea()
+    + GetPerimiter()
+    - validateB()
+}
+class Rhombus  {
+    -- Fields --
+    - _d1
+    - _d2
+    -- Properties --
+    + D1
+    + D2
+    -- Methods --
+    + Rhombus()
+    + GetArea()
+    + GetPerimiter()
+    - validateD1()
+    - validateD2()
+}
+class Square  {
+    -- Fields --
+    - _a
+    -- Properties --
+    + A
+    -- Methods --
+    + Square()
+    + GetArea()
+    + GetPerimiter()
+    - validateA()
+}
+class Trapeze  {
+    -- Fields --
+    - _d
+    -- Properties --
+    + D
+    -- Methods --
+    + Trapeze()
+    + GetArea()
+    + GetPerimiter()
+    - validateD()
+}
+class Triangle  {
+    -- Fields --
+    - _c
+    - _h
+    -- Properties --
+    + C
+    + H
+    -- Methods --
+    + Triangle()
+    + GetArea()
+    + GetPerimiter()
+    - validateC()
+    - validateH()
+}
+GeometricFigure <|-- Circle
+GeometricFigure <|-- Square
+Rectangle <|-- Parallelogram
+Rectangle <|-- Triangle
+Rhombus <|-- Kite
+Square <|-- Rectangle
+Square <|-- Rhombus
+Triangle <|-- Trapeze
+@enduml
