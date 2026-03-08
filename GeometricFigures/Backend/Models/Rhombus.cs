@@ -9,11 +9,13 @@ public class Rhombus : Square
         D1 = d1;
         D2 = d2;
     }
-    public double D1 { 
+    public double D1
+    {
         get => _d1;
         set => _d1 = validateD1(value);
     }
-    public double D2 { 
+    public double D2
+    {
         get => _d2;
         set => _d2 = validateD2(value);
     }

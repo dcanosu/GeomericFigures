@@ -8,10 +8,11 @@ public class Trapeze : Triangle
     {
         D = d;
     }
-    
-    public double D { 
+
+    public double D
+    {
         get => _d;
-        set => _d = validateD(value); 
+        set => _d = validateD(value);
     }
 
     public override double GetArea() => (B + D) * (H / 2);

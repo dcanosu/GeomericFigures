@@ -4,17 +4,20 @@ public class Triangle : Rectangle
 {
     private double _c;
     private double _h;
-    public Triangle(string name, double a, double b, double c, double h) : base(name, a, b){ 
-        C = c; 
-        H = h; 
+    public Triangle(string name, double a, double b, double c, double h) : base(name, a, b)
+    {
+        C = c;
+        H = h;
     }
-    public double C { 
+    public double C
+    {
         get => _c;
-        set => _c = validateC(value); 
+        set => _c = validateC(value);
     }
-    public double H { 
+    public double H
+    {
         get => _h;
-        set => _h = validateH(value); 
+        set => _h = validateH(value);
     }
 
     public override double GetArea() => (B * H) / 2;

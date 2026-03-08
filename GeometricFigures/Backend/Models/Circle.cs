@@ -8,9 +8,10 @@ public class Circle : GeometricFigure
     {
         R = r;
     }
-    public double R { 
+    public double R
+    {
         get => _r;
-        set => _r = validateR(value); 
+        set => _r = validateR(value);
     }
 
     public override double GetArea() => Math.PI * Math.Pow(R, 2);

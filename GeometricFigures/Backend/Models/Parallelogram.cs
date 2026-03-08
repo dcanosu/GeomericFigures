@@ -8,9 +8,10 @@ public class Parallelogram : Rectangle
         H = h;
     }
 
-    public double H { 
+    public double H
+    {
         get => _h;
-        set => _h = validateH(value); 
+        set => _h = validateH(value);
     }
 
     public override double GetArea() => B * H;

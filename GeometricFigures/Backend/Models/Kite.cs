@@ -8,9 +8,10 @@ public class Kite : Rhombus
         B = b;
     }
 
-    public double B { 
+    public double B
+    {
         get => _b;
-        set => _b = validateB(value); 
+        set => _b = validateB(value);
     }
 
     public override double GetArea() => (D1 * D2) / 2;
