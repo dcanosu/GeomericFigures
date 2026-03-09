@@ -48,4 +48,4 @@ cat "$MASTER_FILE" > FinalDiagram.puml
 rm -rf ./Diagrams
 mkdir -p ./Diagrams
 mv FinalDiagram.puml ./Diagrams/FinalDiagram.puml
-echo "¡Hecho! Diagrama vertical y espaciado en FinalDiagram.puml"
+echo "Done! Vertical diagram and spacing in FinalDiagram.puml"
